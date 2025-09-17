@@ -82,6 +82,13 @@ Task:
 1) Create a String object or plain string.
 2) Use .charAt(index) and .length to output characters and size.
 */
+console.log("*****************************************************************************************");
+console.log("TASK 3");
+let str = "Mohammed";
+console.log(str.charAt(2)); // Will print h
+console.log(str.length); // The length of the str which is 8
+ 
+
 
 // ===================================
 // TODO-4: DATE — day, month, and year
