@@ -21,22 +21,22 @@ Task:
 3) Add a setter updateGpa(newGpa) or use a set accessor for gpa that validates 0.0–4.0.
 4) Create an instance/object and output its attributes using the getter(s).
 */
-const Student = {
+class Student  {
    constructor(firstName, lastName, gpa) {
       this.firstName = firstName;
       this.lastName = lastName;
       this._gpa = gpa;
-   }, 
+   }
    
    get fullName() {
       return this.firstName + " " + this.lastName
-   }, 
+   }
    get gpa() {
       return this._gpa
-   },
+   }
    set updateGpa(newVal) {
-      if (newGpa >= 0.0 && newGpa <= 4.0) {
-      this._gpa = newGpa;
+      if (newVal >= 0.0 && newVal <= 4.0) {
+      this._gpa = newVal;
     } else {
       console.error("GPA must be between 0.0 and 4.0");
     }
@@ -48,7 +48,10 @@ console.log("Full Name:", student1.fullName);
 console.log("GPA:", student1.gpa); 
 
 // Update GPA and output again
-student1.gpa = 3.8;
+student1.updateGpa = (3.6); // This will change the gpa
+console.log("Updated GPA:", student1.gpa); 
+
+student1.updateGpa = (5.6); // This will change the gpa
 console.log("Updated GPA:", student1.gpa); 
 // ====================================
 // TODO-2: OBJECT AS MAP + for...in LOOP
@@ -58,6 +61,14 @@ Task:
 1) Make an object used as a "map" (key → value), e.g., course codes → titles.
 2) Iterate over it with for...in and display each key and value.
 */
+const courses = {
+   "SWE 363": "Intro to web development", 
+   "COE 301": "Computer organization"
+}
+for (let course in courses) {
+   console.log(`${course}: ${courses[course]}`);
+   
+}
 
 // =========================================
 // TODO-3: STRING OBJECT — charAt() & length
