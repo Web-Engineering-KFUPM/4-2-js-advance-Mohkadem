@@ -118,6 +118,13 @@ Task:
 2) Use spread syntax with Math.min(...) and Math.max(...) to find extremes.
 3) Display both values.
 */
+console.log("*****************************************************************************************");
+console.log("TASK 5");
+const array = [3, 22, 4, 65, 77, 43, 64, 72, 11, 44]
+const minValue = Math.min(...array)
+const maxValue = Math.max(...array)
+console.log(`Minimum value is ${minValue}`);
+console.log(`Miximum value is ${maxValue}`);
 
 // ===================================================================
 // TODO-6: EXCEPTIONS — try/catch/finally with EMPTY ARRAY edge case
