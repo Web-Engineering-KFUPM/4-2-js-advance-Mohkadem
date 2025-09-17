@@ -51,8 +51,9 @@ console.log("GPA:", student1.gpa);
 student1.updateGpa = (3.6); // This will change the gpa
 console.log("Updated GPA:", student1.gpa); 
 
-student1.updateGpa = (5.6); // This will change the gpa
+student1.updateGpa = (5.6); // This will not change the gpa
 console.log("Updated GPA:", student1.gpa); 
+
 // ====================================
 // TODO-2: OBJECT AS MAP + for...in LOOP
 // ====================================
@@ -61,6 +62,9 @@ Task:
 1) Make an object used as a "map" (key → value), e.g., course codes → titles.
 2) Iterate over it with for...in and display each key and value.
 */
+console.log("*****************************************************************************************");
+console.log("TASK 2");
+
 const courses = {
    "SWE 363": "Intro to web development", 
    "COE 301": "Computer organization"
